@@ -1,6 +1,7 @@
 
 # wa_reader
 Parse WhatApps exported message into visualized way.
+
 This allows you to upload a WhatsApp chat log and view its contents. You can only upload a `txt` directly  file containing the exported chat.
 
 ## Purpose

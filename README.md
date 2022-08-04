@@ -4,6 +4,9 @@ Parse WhatApps exported message into visualized way.
 
 This allows you to upload a WhatsApp chat log and view its contents. You can only upload a `txt` directly  file containing the exported chat.
 
+![Screenshort](./screenshorts/1.png "Screenshort")
+
+
 ## Purpose
 The purpose of this project is to see your WhatApps messages, instead of scrolling a lot, you can directly reach ot certain message with ease. even on specific date.
 - Past exists now.

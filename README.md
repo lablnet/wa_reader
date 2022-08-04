@@ -12,7 +12,10 @@ The purpose of this project is to see your WhatApps messages, instead of scrolli
 - Past exists now.
 - > The past saved in a series of snapshots. Whenever we look at it, we remember the past and it changes our emotions. Past is a big mystery. [reference](https://www.lablnet.com/quotes)
 
- 
+## How to export WhatsApp chats
+- [Andriod](https://faq.whatsapp.com/180225246548988/?locale=en_US)
+- [iOS](https://faq.whatsapp.com/180225246548988/?locale=en_US)
+
 ## Features
 1. [x] Visualized your Personal or group chat.
 2. [ ] Pagination

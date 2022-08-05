@@ -18,7 +18,6 @@ function makeArrayOfMessages(lines) {
         }
         return acc;
     }, []);
-    return acc;
 }
 
 document.getElementById("formFile").addEventListener("change", function () {

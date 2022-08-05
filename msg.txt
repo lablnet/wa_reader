@@ -1,10 +1,10 @@
-8/4/22, 09:18 - Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more.
-8/4/22, 13:13 - Alice: Hi
-8/4/22, 13:13 - Bob: Hey
-8/4/22, 13:13 - Alice: How are you?
-8/4/22, 13:13 - Bob: I'm fine.
-8/4/22, 13:13 - Alice: Thanks.
-8/4/22, 13:13 - Bob: You too.
-8/4/22, 13:13 - Alice: Okay, then.
-8/4/22, 13:13 - Alice: See you later.
-8/4/22, 13:13 - Bob: B bye.
+8/4/22, 12:12 - Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more.
+8/4/22, 12:13 - Alice: Hi
+8/4/22, 12:14 - Bob: Hey
+8/4/22, 12:15 - Alice: How are you?
+8/4/22, 12:17 - Bob: I'm fine.
+8/4/22, 12:18 - Alice: Thanks.
+8/4/22, 12:19 - Bob: You too.
+8/4/22, 12:24 - Alice: Okay, then.
+8/4/22, 12:27 - Alice: See you later.
+8/4/22, 12:28 - Bob: B bye.

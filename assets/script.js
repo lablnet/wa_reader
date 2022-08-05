@@ -1,6 +1,6 @@
 // Regex https://stackoverflow.com/a/57542867/12175903
 const regexParser =
-    /^(\d{1,2})\/(\d{1,2})\/(\d\d), (24:00|2[0-3]:[0-5][0-9]|[0-1][0-9]:[0-5][0-9]) - (\S[^:]*?): (.*)$/i;
+  /^(?:\u200E|\u200F)*\[?(\d{1,4}[-/.] ?\d{1,4}[-/.] ?\d{1,4})[,.]? \D*?(\d{1,2}[.:]\d{1,2}(?:[.:]\d{1,2})?)(?: ([ap]\.?\s?m\.?))?\]?(?: -|:)? (.+?): ([^]*)/i;
 
 // Function to parse the string and return an array.
 function makeArrayOfMessages(lines) {
@@ -55,6 +55,8 @@ document.getElementById("formFile").addEventListener("change", function () {
         return;
     }
     var data = [];
+    let distinctNames = new Set();
+
     // Read the content of .txt file.
     var reader = new FileReader();
     reader.onload = function (e) {
@@ -68,11 +70,13 @@ document.getElementById("formFile").addEventListener("change", function () {
                 let lineData = line.split(/-(.*)/s);
                 let date = lineData[0];
                 if (lineData.length >= 2) {
-
                     lineData = lineData[1].split(/:(.*)/s);
                     let name = lineData[0];
                     let text = lineData[1];
+                    
                     if (lineData.length >= 2 && text != ' <Media omitted>') {
+                        distinctNames.add(name.trim());
+                        
                         data.push({
                             date: date,
                             name: name,
@@ -88,11 +92,6 @@ document.getElementById("formFile").addEventListener("change", function () {
 
     reader.onloadend = function () {
         let name = "";
-        // Get distnic name from data.
-        let distinctNames = new Set(data.map(function (item) {
-            // trim name to remove whitespace
-            return item.name.trim();
-        }));
         // convert set to object.
         let distinctNamesObj = {};
         distinctNames.forEach(el => distinctNamesObj[el] = el);

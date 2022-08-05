@@ -20,6 +20,27 @@ function makeArrayOfMessages(lines) {
     }, []);
 }
 
+document.getElementById("sample-file").addEventListener("click", function () {
+        // get the content of msg.txt file from directory.
+        fetch("./msg.txt").then(response => response.text()).then(text => {
+            // download the file.
+            const element = document.createElement("a");
+            element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
+            element.setAttribute("download", "msg.txt");
+            element.style.display = "none";
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }).catch(error => {
+            Swal.fire({
+                title: 'Error',
+                text: 'Error while fetching the file.',
+                icon: 'error',
+                confirmButtonText: 'OK',
+            })
+        });
+});
+
 document.getElementById("formFile").addEventListener("change", function () {
     var file = this.files[0];
     // check that file extension is .txt

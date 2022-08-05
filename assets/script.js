@@ -21,9 +21,9 @@ function makeArrayOfMessages(lines) {
 }
 
 // Download sample file.
-document.getElementById("sample-file").addEventListener("click", function () {
+document.getElementById("sample-file").addEventListener("click", async function () {
     // get the content of msg.txt file from directory.
-    fetch("./msg.txt").then(response => response.text()).then(text => {
+    await fetch("./msg.txt").then(response => response.text()).then(text => {
         // download the file.
         const element = document.createElement("a");
         element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));

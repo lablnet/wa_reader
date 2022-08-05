@@ -18,9 +18,10 @@ The purpose of this project is to see your WhatApps messages, instead of scrolli
 
 ## Features
 1. [x] Visualized your Personal or group chat.
-2. [ ] Pagination
-3. [ ] Filter message by date (month, day)
-4. [ ] Searching
+2. [x] Download sample chat log.
+3. [ ] Pagination
+4. [ ] Filter message by date (month, day)
+5. [ ] Searching
 
 ### Techonology Stack
 1. [TailwindCSS](https://tailwindcss.com/).
